@@ -4,7 +4,7 @@
   "description": "Sharp package compiled for the Lambda environment",
   "main": "index.js",
   "scripts": {
-    "layer:sharp": "docker run -v \"$PWD\":/var/task -it lambci/lambda:build-nodejs8.10 /bin/bash -c \"cd layer/nodejs && npm install\"",
+    "build": "docker run -v \"$PWD\":/var/task -it lambci/lambda:build-nodejs8.10 /bin/bash -c \"npm install\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrew Hammond",

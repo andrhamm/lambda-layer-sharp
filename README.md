@@ -20,6 +20,7 @@ Then, in your other Serverless service's `serverless.yml`, reference this layer 
 
 Update the version in the `package.json`, delete the `layer/nodejs/node_modules` directory then, with Docker running, run:
 
+    cd layer/nodejs
     npm run build
 
 Then
