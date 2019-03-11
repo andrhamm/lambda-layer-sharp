@@ -1,0 +1,15 @@
+{
+  "name": "lambda-layer-sharp",
+  "version": "1.0.0",
+  "description": "Sharp package compiled for the Lambda environment",
+  "main": "index.js",
+  "scripts": {
+    "layer:sharp": "docker run -v \"$PWD\":/var/task -it lambci/lambda:build-nodejs8.10 /bin/bash -c \"cd layer/nodejs && npm install\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Hammond",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.21.3"
+  }
+}
